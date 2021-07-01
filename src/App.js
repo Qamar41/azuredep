@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import App from 'base-shell/lib'
+import MUIConfig from 'material-ui-shell/lib'
+import merge from 'base-shell/lib/utils/config'
+import _config from './config'
 
-function App() {
-  return (
-    <div className="App">
-     <h1>Hello Qamar</h1>
-    <p> now the code is up </p>
-    <h1>new repo , CI , CD checked</h1>
+const config = merge(MUIConfig, _config)
 
-    </div>
-  );
+export default class Demo extends Component {
+  render() {
+    return <App config={config} />
+  }
 }
-
-export default App;
