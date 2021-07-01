@@ -6,7 +6,8 @@ function App() {
     <div className="App">
      <h1>Hello Qamar</h1>
     <p> now the code is up </p>
-    <h1>new repo</h1>
+    <h1>new repo , CI , CD</h1>
+
     </div>
   );
 }
